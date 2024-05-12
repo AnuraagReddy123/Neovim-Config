@@ -8,10 +8,10 @@ opt.mouse = "a" -- Enable mouse support
 
 -- Basic setup for lines
 opt.cursorline = true
-opt.number = true -- Line number
+opt.number = true         -- Line number
 opt.relativenumber = true -- Relative line numbers
 opt.termguicolors = true
-opt.scrolloff = 10 -- Minimal number of screen lines to keep above and below cursor
+opt.scrolloff = 10        -- Minimal number of screen lines to keep above and below cursor
 
 -- Indents
 opt.smartindent = true
@@ -34,11 +34,11 @@ opt.splitright = true
 opt.splitbelow = true
 
 -- Miscellaneous
-opt.showmode = false -- Don't show mode, since it's already in the status line
+opt.showmode = false          -- Don't show mode, since it's already in the status line
 opt.clipboard = "unnamedplus" -- Sync clipboard between os and neovim
-opt.undofile = true -- Keep undo file history
+opt.undofile = true           -- Keep undo file history
 opt.signcolumn = "yes"
-opt.updatetime = 250 -- Save when idle
+opt.updatetime = 250          -- Save when idle
 opt.timeoutlen = 300
 
 -- Set how neovim displays whitespace characters
