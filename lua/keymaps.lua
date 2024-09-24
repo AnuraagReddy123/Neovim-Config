@@ -27,3 +27,15 @@ map("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left window" })
 map("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 map("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 map("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- Error
+map("n", "]g", vim.diagnostic.goto_next)
+map("n", "[g", vim.diagnostic.goto_prev)
+
+
+function run_biblioteca()
+	vim.cmd("!flatpak run app.drey.Biblioteca &")
+end
+
+-- Map the gl key combination to the function
+vim.api.nvim_set_keymap('n', 'gl', ':lua run_biblioteca()<CR>', { noremap = true })
